@@ -13,6 +13,19 @@
         padding: 20px;
         color: #333;
     }
+.header-ipn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo-ipn, .logo-cecyt {
+        width: 100px;
+        height: auto;
+    }
+
 
     h1, h2, h3 {
         color: #5a0035; /* Vino IPN */
@@ -61,10 +74,93 @@
             padding: 5px;
         }
     }
+
+    /* ---------- CREDENCIAL ---------- */
+    .credencial {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .credencial-card {
+        width: 100%;
+        max-width: 450px;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        border: 3px solid #5a0035; /* color IPN */
+    }
+
+    .credencial-foto {
+        width: 120px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #5a0035;
+        margin-bottom: 10px;
+    }
+
+    .credencial-info p {
+        margin: 4px 0;
+        font-size: 15px;
+    }
+
+    .cred-nombre {
+        margin-bottom: 8px;
+        font-size: 22px;
+        color: #5a0035;
+    }
+
+    .cred-qrcode {
+        margin-top: 10px;
+    }
+
+    .cred-qr {
+        width: 120px;
+    }
 </style>
-</head>
+
+
 
 <body>
+<!-- ENCABEZADO INSTITUCIONAL -->
+<div class="header-ipn">
+
+    <img src="ipn.png" class="logo-ipn" align="left">
+    
+    <div class="header-text">
+        <h2>Instituto Politécnico Nacional</h2>
+        <h3>CECyT No. 3 “Estanislao Ramírez Ruiz”</h3>
+    </div>
+    
+    <img src="err.png" class="logo-cecyt" align="right">
+
+</div>
+
+
+<div class="credencial">
+    <div class="credencial-card">
+
+        <!-- FOTO - si no tienes foto, uso una de ejemplo -->
+        <img src="mia.jpg" alt="Foto" class="credencial-foto">
+
+        <div class="credencial-info">
+            <h2 class="cred-nombre">Mía Iraís</h2>
+            <p><strong>Boleta:</strong> 2025030589</p>
+            <p><strong>Grupo:</strong> 3IM6</p>
+            <p><strong>Turno:</strong> Matutino</p>
+        </div>
+
+        <div class="cred-qrcode">
+            <!-- QR de ejemplo para probar -->
+            <img src="qr.jpg" alt="QR" class="cred-qr">
+        </div>
+
+    </div>
+</div>
+
 
 <h1>Horario – Grupo 3IM6</h1>
 <h3>Turno: Matutino</h3>
